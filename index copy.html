@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+
+<head>
+    <script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.118.2" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Navbar Template · Bootstrap v5.3</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <header>
+            <nav class="d-none d-sm-block">
+                <div class="row justify-content-between align-content-center" style="height: 100px;">
+                    <div class="col-6">
+                        <h1 class="">MASLIBRANZAS</h1>
+                    </div>
+                    <div class="col-6 text-end">
+                        <p></p>
+                        <p>604 4445269</p>
+                        <p></p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="formulario" class="row justify-content-between align-content-center">
+
+            <div class="col-md-6">
+                <h1 class="text-center">MasLibranzas, MasAcompañamiento, MasBeneficios, MasInclusión, MasSoluciones,
+                    MasOpciones, MasConvenios. Mas para usted.</h1>
+            </div>
+
+            <div class="col-sm-12 col-md-5">
+
+                <form action="enviar.php" method="post" class="card text-center col-md-10 recuadro bg-primary-subtle">
+                    <div class="card-header">
+                        <h1 class="text-uppercase mt-4 ">Vinculacion</h1>
+                        <p>
+                        <p>Ingresa los siguientes datos para consultar tu cupo pre-aprobado</p>
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group mb-3">
+                            <select class="input-group mb-3 form-select" id="pagaduria">
+                                <option selected>Pagaduria</option>
+                                <option value="1">Colpensiones</option>
+                                <option value="2">Fiduciaria previsora</option>
+                                <option value="3">Fopep</option>
+                                <option value="4">Positiva</option>
+                                <option value="5">Colfondos</option>
+                                <option value="6">Seguros de vida alfa</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="col mb-3 me-2 ">
+                                <input type="text" class="form-control" id="name" placeholder="Nombre">
+                            </div>
+                            <div class="col mb-3 ms-2">
+                                <input type="text" class="form-control" id="lastName" placeholder="Apellido">
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="col mb-3 pe-2">
+                                <select class="col input-group mb-3 form-select" id="typeDocument" aria-label="Small select example">
+                                    <option selected>Tipo Documento</option>
+                                    <option value="1">C&eacute;dula de ciudadan&iacute;a</option>
+                                    <option value="2">C&eacute;dula de extranjer&iacute;a</option>
+                                    <option value="3">Tarjeta de Identidad</option>
+                                    <option value="4">Registro Civil</option>
+                                </select>
+                            </div>
+                            <div class="col mb-3">
+                                <input type="number" class="form-control" id="numDoc" placeholder="Numero">
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="col-2 col-md-3 mb-3 pe-2 form-group">
+                                <div class="form-group">
+                                    <label for="codigo">C&oacute;d. Pa&iacute;s</label>
+                                    <input type="text" class="form-control" id="codigo" name="codigo" disabled
+                                        value="+57">
+                                </div>
+                            </div>
+                            <div class="col-10 col-md-9 mb-3 ">
+                                <input type="number" class="form-control" id="phone" placeholder="Telefono">
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="col mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Correo" aria-label="Correo">
+                            </div>
+                        </div>                  
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                            <label class="form-check-label" for="checkDefault">
+                                Acepto la <a href="./politicas.html" target="_blank">Política de Tratamiento de Datos</a> de acuerdo a la Ley de Habeas Data de
+                                Colombia
+                            </label>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <button class="btn btn-primary" id="submit" type="submit" name="submit" value="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="spaceSection">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.096436734863!2d-75.5658444!3d6.2510226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f903f1a2a1%3A0xc4ee27cda4fefa19!2sCra.%2049%20%2352%2C%20La%20Candelaria%2C%20Medell%C3%ADn%2C%20La%20Candelaria%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1701730376182!5m2!1ses!2sco"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="spaceSection">
+        <div class="row text-center justify-content-center">
+            <div class="col-md-3 col-sm-12">
+                <img src="./assets/img/vision.png" alt="vision" srcset="" width="100px"
+                    style="padding: 10px 0px 13px 0px;">
+                <h3 class="imgViMi">Vision</h3>
+                <p class="textoViMi">Que se nos reconozca a nivel nacional por brindar un servicio confiable y una
+                    atención ágil, confiable y muy respetuosa. </p>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <img src="./assets/img/mision.png" alt="mision" srcset="" width="100px">
+                <h3 class="imgViMi">Mision</h3>
+                <p class="textoViMi">Ofrecer una atención confiable ágil y oportuna en la asesoría para la solicitud de
+                    créditos a nuestros clientes facilitando nuestros lazos comerciales con respeto y lealtad.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

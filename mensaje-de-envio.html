@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+
+<head>
+    <script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.118.2" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Navbar Template · Bootstrap v5.3</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <header>
+            <nav class="">
+                <div class="row justify-content-between align-middle" style="height: 150px;">
+                    <div class="col-md-6 col-sm-12 d-none d-sm-block">
+                        <img src="./assets/img/LOGO_MAS_LIBRANZA.png" alt="" srcset="" height="150px" />
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center d-block d-sm-none">
+                        <img src="./assets/img/LOGO_MAS_LIBRANZA.png" alt="" srcset="" height="150px" />
+                    </div>
+                    <div class="col-md-6 text-end align-middle d-none d-sm-block">
+                        <div class="row">
+                            <div class="col-12">
+                                <p style="margin-top: 2%; margin-bottom: 0px;">Llamanos</p>
+                                <h5>+57-604-444-5269</h5>
+                            </div>
+                            <div class="col-12">
+
+                                <a href="https://www.facebook.com/MasLibranzas" target="_blank"><i
+                                        class="bi bi-facebook socialmedia"></i></a>
+                                <a href="https://www.instagram.com/MASLIBRANZAS/" target="_blank"><i
+                                        class="bi bi-instagram socialmedia"></i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    </section>
+
+    <div class="spaceSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card text-center" >
+                  <div class="card-body">
+                    <div class="heading_main text_align_center">
+                       <h3><span class="theme_color"></span>SU MENSAJE SE ENVIÓ EXITOSAMENTE</h3>
+                    </div>
+                    <h1 class="card-title"></h1>
+                    <a href="index.html" class="btn btn-primary" style="background-color: #1c3b92; border:#1c3b92;">Inicio</a><br><br>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container-fluid text-center fondofooter footersend">
+        <footer class="tex-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 d-none d-sm-block footer-middle">
+                    <div>
+                        <img class="img-responsive logosfooter" src="./assets/img/LOGO_MAS_LIBRANZA.png" alt="#" height="100px" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 text-start">
+                    <div class="full container-fluid">
+                        <ul>
+                            <li>
+                                <p> <i class="bi bi-geo-alt socialmedia"></i> Calle 55 # 49-28 Of 203 Ed la Lonja,
+                                    Medellin -
+                                    Colombia</p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-envelope-paper socialmedia"></i>maslibranzas@gmail.com</p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-telephone socialmedia"></i>+57 (604) 444 5269 - 310 622 2392</p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-clock socialmedia"></i>Lunes - Viernes: 08:00 AM - 05:00 PM
+                                    S&aacute;bados:
+                                    08:00 AM - 01:00 PM</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/fe689c3755.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/s/custom.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        if (window.innerWidth > 600) {
+            // Tu código para pantallas más anchas que 600 píxeles
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 6,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: true,
+                smartSpeed: 25000,
+                rewind: false
+            });
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [1000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
+        }
+
+        if (window.innerWidth < 600) {
+            // Tu código para pantallas más anchas que 600 píxeles
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                smartSpeed: 25000,
+                rewind: false
+            });
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [3000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
+        }
+
+      
+
+
+
+    </script>
+</body>
+
+</html>

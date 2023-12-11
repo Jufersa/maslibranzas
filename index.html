@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+
+<head>
+    <script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.118.2" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Navbar Template · Bootstrap v5.3</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <header>
+            <nav class="">
+                <div class="row justify-content-between align-middle" style="height: 150px;">
+                    <div class="col-md-6 col-sm-12 d-none d-sm-block">
+                        <img src="./assets/img/LOGO_MAS_LIBRANZA.png" alt="" srcset="" height="150px" />
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center d-block d-sm-none">
+                        <img src="./assets/img/LOGO_MAS_LIBRANZA.png" alt="" srcset="" height="150px" />
+                    </div>
+                    <div class="col-md-6 text-end align-middle d-none d-sm-block">
+                        <div class="row">
+                            <div class="col-12">
+                                <p style="margin-top: 2%; margin-bottom: 0px;">Llamanos</p>
+                                <h5>+57-604-444-5269</h5>
+                            </div>
+                            <div class="col-12">
+
+                                <a href="https://www.facebook.com/MasLibranzas" target="_blank"><i
+                                        class="bi bi-facebook socialmedia"></i></a>
+                                <a href="https://www.instagram.com/MASLIBRANZAS/" target="_blank"><i
+                                        class="bi bi-instagram socialmedia"></i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="formulario" class="row justify-content-between align-content-center spaceSection">
+
+            <div class="col-md-6 d-none d-sm-block">
+                <h1 class="text-center">MasLibranzas, MasAcompañamiento, MasBeneficios, MasInclusión, MasSoluciones,
+                    MasOpciones, MasConvenios. Mas para usted.</h1>
+            </div>
+
+            <div class="col-sm-12 col-md-5">
+
+                <form action="enviar.php" method="post" class="card text-center col-md-10 recuadro bg-primary-subtle">
+                    <fieldset style="width:100% ">
+                        <div class="card-header">
+                            <h1 class="text-uppercase mt-4 ">Vinculacion</h1>
+                            <p>
+                            <p>Ingresa los siguientes datos para consultar tu cupo pre-aprobado</p>
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <select name="pagaduria" id="pagaduria" class="input-group mb-3 form-select" requerid>
+                                    <option selected disabled>Escoge la Pagaduria</option>
+                                    <option value="Colpensiones">Colpensiones</option>
+                                    <option value="Fiduciaria previsora">Fiduciaria previsora</option>
+                                    <option value="Fopep">Fopep</option>
+                                    <option value="Positiva">Positiva</option>
+                                    <option value="Colfondos">Colfondos</option>
+                                    <option value="Seguros de vida alfa">Seguros de vida alfa</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="col mb-3 me-2 ">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Nombre"
+                                        required>
+                                </div>
+                                <div class="col mb-3 ms-2">
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
+                                        placeholder="Apellido" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="col mb-3 pe-2">
+                                    <select class="col input-group mb-3 form-select" name="typeDocument"
+                                        id="typeDocument" aria-label="Small select example" required>
+                                        <option selected disabled>Tipo Documento</option>
+                                        <option value="Cedula de Ciudadania">C&eacute;dula de ciudadan&iacute;a</option>
+                                        <option value="Cedula de Extranjeria">C&eacute;dula de extranjer&iacute;a
+                                        </option>
+                                        <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                                        <option value="Registro Civil">Registro Civil</option>
+                                    </select>
+                                </div>
+                                <div class="col mb-3">
+                                    <input type="number" name="numDoc" id="numDoc" class="form-control"
+                                        placeholder="Numero" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="col-sm-2 col-md-3 mb-3 pe-2 form-group">
+                                    <label for="codigo">C&oacute;d. Pa&iacute;s</label>
+                                    <select class="input-group mb-3 form-select" id="codigo" name="codigo"
+                                        aria-label="Small select example" required>
+                                        <option selected>57</option>
+                                    </select>
+                                </div>
+                                <div class="col mb-3">
+                                    <input type="number" class="form-control" id="phone" name="phone"
+                                        placeholder="Telefono" required>
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="col mb-3">
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="Correo" aria-label="Correo" required>
+                                </div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkDefault" required>
+                                <label class="form-check-label" for="checkDefault">
+                                    Acepto la <a href="./politicas.html" target="_blank">Política de Tratamiento de
+                                        Datos</a> de acuerdo a la Ley de Habeas Data de
+                                    Colombia
+                                </label>
+                            </div>
+
+                            <input type="text" name="robot" class="form-check-input" id="robot" hidden>
+
+                            <div class="input-group mb-3">
+                                <button id="submit" type="submit" name="submit" value="submit"
+                                    class="btn btn-primary" >Enviar</button>
+                            </div>
+
+
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="spaceSection">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.096436734863!2d-75.5658444!3d6.2510226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f903f1a2a1%3A0xc4ee27cda4fefa19!2sCra.%2049%20%2352%2C%20La%20Candelaria%2C%20Medell%C3%ADn%2C%20La%20Candelaria%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1701730376182!5m2!1ses!2sco"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row text-center justify-content-center spaceSection " style="background: #fff;">
+            <div class="col-md-3 col-sm-12">
+                <img src="./assets/img/vision.png" alt="vision" srcset="" width="100px"
+                    style="padding: 10px 0px 13px 0px;">
+                <h3 class="imgViMi">Vision</h3>
+                <p class="textoViMi">Que se nos reconozca a nivel nacional por brindar un servicio confiable y una
+                    atención ágil, confiable y muy respetuosa. </p>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <img src="./assets/img/mision.png" alt="mision" srcset="" width="100px">
+                <h3 class="imgViMi">Mision</h3>
+                <p class="textoViMi">Ofrecer una atención confiable ágil y oportuna en la asesoría para la solicitud de
+                    créditos a nuestros clientes facilitando nuestros lazos comerciales con respeto y lealtad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+
+        <div class="owl-carousel owl-theme align-items-center padre-flex" style="background: #fff; padding-top: 30px; padding-bottom: 40px;">
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-alfa.png" alt="Seguros Alfa" srcset=""
+                    class="logospaga text-center"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-colfondos.png" alt="Colfondos" srcset=""
+                    class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-colpensiones.png" alt="Colpensiones"
+                    srcset="" class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-fopep.png" alt="Fopep" srcset=""
+                    class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-positiva.svg" alt="Positiva" srcset=""
+                    class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-previsora.png" alt="Previsora" srcset=""
+                    class="logospaga"></div>
+
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-alfa.png" alt="Seguros Alfa" srcset=""
+                    class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-colfondos.png" alt="Colfondos" srcset=""
+                    class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-colpensiones.png" alt="Colpensiones"
+                    srcset="" class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-fopep.png" alt="Fopep" srcset=""
+                    class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-positiva.svg" alt="Positiva" srcset=""
+                    class="logospaga"></div>
+            <div class="item col-md-8 padre-flex"><img src="./assets/img/logo-previsora.png" alt="Previsora" srcset=""
+                    class="logospaga"></div>
+        </div>
+
+        <a href="https://wa.link/auso5a" target="_blank" class="btnwhatsapp"><img src="./assets/img/whatsapp-icono.svg"
+                alt="" width="50px"></i></a>
+    </section>
+
+    <section class="container-fluid text-center fondofooter">
+        <footer class="tex-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 d-none d-sm-block footer-middle">
+                    <div>
+                        <img class="img-responsive logosfooter" src="./assets/img/LOGO_MAS_LIBRANZA.png" alt="#" height="100px" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 text-start">
+                    <div class="full container-fluid">
+                        <ul>
+                            <li>
+                                <p> <i class="bi bi-geo-alt socialmedia"></i> Calle 55 # 49-28 Of 203 Ed la Lonja,
+                                    Medellin -
+                                    Colombia</p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-envelope-paper socialmedia"></i>maslibranzas@gmail.com</p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-telephone socialmedia"></i>+57 (604) 444 5269 - 310 622 2392</p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-clock socialmedia"></i>Lunes - Viernes: 08:00 AM - 05:00 PM
+                                    S&aacute;bados:
+                                    08:00 AM - 01:00 PM</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/fe689c3755.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/s/custom.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        if (window.innerWidth > 600) {
+            // Tu código para pantallas más anchas que 600 píxeles
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 6,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: true,
+                smartSpeed: 25000,
+                rewind: false
+            });
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [1000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
+        }
+
+        if (window.innerWidth < 600) {
+            // Tu código para pantallas más anchas que 600 píxeles
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                smartSpeed: 25000,
+                rewind: false
+            });
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [3000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
+        }
+
+      
+
+
+
+    </script>
+</body>
+
+</html>

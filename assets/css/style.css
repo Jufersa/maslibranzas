@@ -1,0 +1,153 @@
+/*Fonts*/
+@import url('https://fonts.cdnfonts.com/css/avenir-lt-pro?styles=60921');
+
+
+body::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/fondo.jpg) no-repeat;
+  opacity: 0.2;
+  z-index: -3;
+}
+
+header::before{
+  color: aliceblue;
+  background-color: black;
+  opacity: 1.5;
+  z-index: -2;
+}
+
+.colorlabel{
+  background: #0590c748;;
+}
+
+#formulario{
+  display: flex;
+  align-items: center;
+}
+
+body{
+  font-family: 'Avenir LT Pro', sans-serif;
+}
+
+.imgViMi{
+  margin: 40px 0px 15px;
+}
+
+.textoViMi{
+  font-family: 'Avenir LT Pro';
+  font-size: 15px;
+}
+
+.spaceSection{
+  padding-top: 99px !important;
+}
+
+@media (min-width: 600px){
+  .recuadro{
+    margin-top: 50px;
+    box-shadow:  rgb(255, 255, 255) 20px -30px 0px -3px, #1c3b92 20px -20px, #1c3b92 30px -20px, #1c3b92 11px -40px, #1c3b92 30px -40px;
+    
+  }
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  font-size: 10px;
+  position: absolute;
+  top: -14px; /* Ajusta según sea necesario para la posición deseada */
+  left: 10px; /* Ajusta según sea necesario para la posición deseada */
+}
+
+.form-group select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btnwhatsapp {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	font-size: 25px;
+	border-radius: 0px;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 40px;
+	color: #ffffff;
+	font-weight: 900;
+	border-radius: 100%;
+  z-index: 100;
+}
+
+.btnwhatsapp:hover{
+  filter: drop-shadow(0 0 2px #f2f2f5);
+  -webkit-box-shadow: 2px 0px 39px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 0px 39px 2px rgba(0,0,0,0.75);
+box-shadow: 2px 0px 39px 2px rgba(0,0,0,0.75);
+}
+
+.padre-flex{
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logospaga{
+  margin: auto;
+    filter:drop-shadow(10px 8px 17px #000);
+  }
+
+.logosfooter{
+    margin: auto;
+    filter:drop-shadow(9px 7px 8px #fff);
+   }
+
+.socialmedia{
+  font-size: 2rem !important; 
+  color: #1c3b92 !important;
+  margin-right: 10px !important;
+}
+
+.socialmedia:hover{
+  color: #0591c7 !important;
+}
+
+.footer-middle{
+  display: flex; /* NUEVO */
+  align-items: center;
+  line-height: 200px;
+}
+
+.backvideo{
+  background: url("../video/footer1.mp4");
+}
+
+.full ul{
+  list-style: none;
+}
+
+.fondofooter{
+  background: url("../img/fondofooter1.jpg"); 
+  padding-top: 40px; 
+  max-width: 100%; 
+  height: auto;
+}
+
+
+.footersend{
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	line-height: 40px;
+  z-index: 10;
+}
